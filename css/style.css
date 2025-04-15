@@ -1,0 +1,84 @@
+body {
+    margin: 100px;
+    background-color: black;
+    color: white;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.box {
+    height: 700px;
+    /* Set a fixed height for the boxes */
+    background-color: #141414;
+    /* Bootstrap primary color */
+    color: white;
+    /* Text color */
+    display: flex;
+    /* Use flexbox for centering */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    margin-bottom: 20px;
+    /* Space below the boxes */
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+}
+
+.box p {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-icon {
+    /* Add the glow effect */
+    box-shadow: 0 0 90px rgba(255, 255, 255, 1);
+    /* White glow */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition */
+    border-radius: 50%;
+    /* Rotate the image by 45 degrees */
+    animation: rotate 1.3s ease forwards;
+}
+
+/* Define the keyframes for the rotation */
+@keyframes rotate {
+    from {
+        transform: rotate(120deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Start slightly lower */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at original position */
+    }
+}

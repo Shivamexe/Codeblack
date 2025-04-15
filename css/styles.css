@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.form-label-1 {
+    font-size: 30px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 10px 10px 0px;
+}
+
+.black-input {
+    background-color: rgb(0, 0, 0);
+    /* Set background color to black */
+    color: rgb(255, 255, 255);
+    /* Set text color to white for contrast */
+    border: 1px solid #ccc;
+    /* Optional: Set border color */
+}
+
+.black-input:focus {
+    background-color: black;
+    /* Keep background black on focus */
+    color: white;
+    /* Keep text color white on focus */
+    border-color: #ffffff;
+    /* Change border color on focus (optional) */
+    box-shadow: 0 0 20px rgb(255, 255, 255, 0.5);
+    /* Optional: Add shadow on focus */
+}
+
+.black-input::placeholder {
+    color: white;
+    /* Set placeholder text color to white */
+    opacity: 0.7;
+    /* Optional: Adjust opacity for better visibility */
+}
+
+.form-container {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.logo span {
+    display: inline-block;
+    opacity: 0;
+    /* Start invisible */
+    animation: showAndFade 2.2s forwards;
+    /* Animation */
+}
+
+.logo span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.logo span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.logo span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.logo span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.logo span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.logo span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.logo span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.logo span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.logo span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+@keyframes showAndFade {
+    0% {
+        opacity: 0;
+        /* Start invisible */
+    }
+
+    50% {
+        opacity: 1;
+        /* Fully visible */
+        transform: translateX(0);
+        /* Move to original position */
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Start slightly lower */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at original position */
+    }
+}
+
+.form-container.show {
+    display: block;
+    animation: fadeIn 2s ease forwards;
+    margin: 40px 100px;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust the max-width as needed */
+    .logo {
+        font-size: 50px;
+        /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 968px) {
+
+    /* Adjust the max-width as needed */
+    .logo {
+        font-size: 30px;
+        /* Smaller font size for smaller screens */
+    }
+}
+
+.glow {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    letter-spacing: 20px;
+}
+
+.glow2 {
+    text-shadow: 0 0 10px rgba(249, 252, 255, 0.623);
+}
+
+.top-icon {
+    /* Add the glow effect */
+    box-shadow: 0 0 100px rgba(5, 255, 59, 0.5);
+    /* White glow */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition */
+    border-radius: 50%;
+    /* Rotate the image by 45 degrees */
+    animation: rotate 1.3s ease forwards;
+}
+
+/* Define the keyframes for the rotation */
+@keyframes rotate {
+    from {
+        transform: rotate(120deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.status p span {
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.last{
+    text-decoration: none;  
+}
