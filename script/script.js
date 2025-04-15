@@ -24,7 +24,7 @@ document.getElementById('loadingButton').addEventListener('click', function (eve
     // Simulate loading time (e.g., 2 seconds)
     setTimeout(() => {
         // Redirect to the desired URL
-        window.location.href = 'result.html';
+        window.location.href = 'Codeblack/result.html';
     }, 2000); // Change 2000 to the desired loading time in milliseconds
 });
 
