@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon"> <!-- Link to favicon -->
+    <title>CX Web Application</title>
+</head>
+
+<body>
+    <div class="logo glow">
+        <span>C</span>
+        <span>O</span>
+        <span>D</span>
+        <span>E</span>
+        <span>B</span>
+        <span>L</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+    </div>
+
+    <div class="form-container" id="formContainer">
+        <div>
+            <img class="top-icon glow" src="favicon/android-chrome-192x192.png" height="70" width="70">
+        </div>
+        <div class="status">
+            <p>Application Status: <span>OPEN</span></p>
+        </div>
+        <label class="form-label-1 glow2">General Information</label>
+        <form class="row g-4" id="myForm">
+            <div class="col-md-3">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control black-input" id="usernameValue">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Account Name</label>
+                <input type="text" class="form-control black-input" id="AccountNameValue">
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefaultUsername" class="form-label">MTA Serial</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">#</span>
+                    <input type="text" class="form-control black-input" id="MTASerialValue"
+                        aria-describedby="inputGroupPrepend2">
+                </div>
+            </div>
+
+            <div>
+                <label class="form-label-1 glow2">Tell us more</label>
+                <div class="mb-3 row">
+                    <div class="col me-2">
+                        <label for="JoinValue" class="form-label">Reasons for Joining?</label>
+                        <textarea class="form-control black-input" id="JoinValue" rows="3"></textarea>
+                    </div>
+                    <div class="col ms-2">
+                        <label for="acceptValue" class="form-label">Reasons why we should accept you?</label>
+                        <textarea class="form-control black-input" id="AcceptValue" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <label class="form-label-1 glow2">Screenshots</label>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-2">
+                        <input class="form-control form-control-sm black-input" type="text" placeholder="/stats"
+                            aria-label=".form-control-sm example" id="statsValue">
+                    </div>
+                    <div class="col-12 col-md-4 mb-2">
+                        <input class="form-control form-control-sm black-input" type="text" placeholder="/punishlog"
+                            aria-label=".form-control-sm example" id="punishlogValue">
+                    </div>
+                    <div class="col-12 col-md-4 mb-2">
+                        <input class="form-control form-control-sm black-input" type="text" placeholder="/history"
+                            aria-label=".form-control-sm example" id="historyValue">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 last">
+                <P>📝 By clicking the 'Generate Application' button, you confirm your understanding and acceptance of
+                    all <a href="https://cit.gg/index.php?topic=403818.0" class="link-success">rules and
+                        requirements</a>
+                    outlined</P>
+            </div>
+            <div>
+                <a href="#" id="loadingButton" class="btn btn-light" onclick="collectFormData()">Generate Application</a>
+            </div>
+        </form>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
